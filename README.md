@@ -19,6 +19,41 @@ Durante esta formação, estou explorando os principais conceitos e serviços da
 
 ---
 
+## 🗂️ Criando um Grupo de Recursos + Zonas de Disponibilidade
+
+Antes de criar qualquer recurso no Azure, é necessário ter um **Grupo de Recursos**, que funciona como um contêiner lógico onde você organiza os recursos relacionados.
+
+### ✅ Como criar um Grupo de Recursos:
+
+1. Acesse o portal: [https://portal.azure.com](https://portal.azure.com)
+2. No menu lateral ou na barra de busca, digite e selecione **"Grupos de recursos"**.
+3. Clique em **“Criar”**.
+4. Escolha:
+   - A **assinatura** (subscription);
+   - O **nome** do grupo (ex: `meu-grupo-rg`);
+   - A **região (localização)** — ex: *Brazil South* ou *East US*.
+5. Clique em **"Revisar + Criar"** e depois em **"Criar"**.
+
+> 🔸 A localização do Grupo de Recursos **define onde os metadados serão armazenados**, mas os recursos dentro dele podem estar em outras regiões.
+
+### 🌍 Visualizando Zonas de Disponibilidade no Mapa (Globo)
+
+As **Zonas de Disponibilidade** são locais físicos distintos dentro de uma mesma região, projetados para oferecer alta disponibilidade. Elas garantem que se uma zona falhar, as outras ainda continuarão funcionando.
+
+🧭 Para ver onde há suporte a zonas de disponibilidade:
+
+1. Acesse: [https://azure.microsoft.com/pt-br/explore/global-infrastructure/geographies/](https://azure.microsoft.com/pt-br/explore/global-infrastructure/geographies/)
+2. Role até o **mapa interativo** e clique nas regiões.
+3. Regiões com suporte a zonas mostram a tag: **"Availability Zones"**.
+4. Exemplos de regiões com Zonas:
+   - *East US 2*
+   - *West Europe*
+   - *Southeast Asia*
+
+> 📌 Isso é útil para tomar decisões mais estratégicas sobre **resiliência e localização de workloads**!
+
+---
+
 ## ☁️ Modelos de Serviço em Nuvem
 
 ### 🔧 IaaS — *Infrastructure as a Service*
